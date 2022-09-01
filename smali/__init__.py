@@ -4,8 +4,9 @@ import sys
 if sys.hexversion < 0x03080000:
     raise Exception('python 3.8 or newer required')
 
-with open(os.path.join(os.path.dirname(__file__), '..', 'VERSION'), 'r') as f:
-    __version__ = f.read()
+#with open(os.path.join(os.path.dirname(__file__), '..', 'VERSION'), 'r') as f:
+#    __version__ = f.read()
+__version__ = "0.2.5"
 
 from smali.smali_file import SmaliFile
 
